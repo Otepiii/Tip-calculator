@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tip Calculator</title>
+    <link rel="shortcut icon" href="assets/images/calcu-icon.png" />
+</head>
+
+<body>
+    <br></br>
+    <h1 class="text-center">Tip Calculator</h1>
+    <div class="box">
+        <div class="input-group mb-3">
+            Bill
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" id="bill">
+        </div>
+
+        <div>
+            <div class="input-group" id="tipinput">
+                Tip
+                <input type="text" class="form-control" id="tip">
+                <div class="input-group-append">
+                    <span class="input-group-text">%</span>
+                </div>
+            </div>
+        </div>
+        <div id="split">
+            Split Bill
+            <label class="btn btn-primary">
+                <input type="radio" name="options">
+            </label>
+            <div class="input-group" style="display: block">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Between</span>
+                    <input type="text" class="form-control" id="persons">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit" id="calculate">Calculate</button>
+    </div>
+    <div class="results" style="display: block">
+        <div class="person-result" style="display: block">
+            <div class="input-group mb-3">
+                <div>Tip Price
+                    <div id="total-price/person"></div>
+                </div>
+                <div></div>
+            </div>
+            <div class="input-group mb-3">
+                <div>
+                    Total Tip
+                    <div id="total-tip/person"></div>
+                </div>
+                <div></div>
+                <div class="input-group mb-3">Per Person</div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="input-group mb-3">
+            <div>Tip Amount
+                <div id="total-tip"></div>
+            </div>
+            <div></div>
+        </div>
+        <div class="input-group mb-3">
+            <div>Total Price
+                <div id="total-price"></div>
+            </div>
+            <div></div>
+        </div>
+        <div>
+            <tr class="table-dark">Share Results</tr>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

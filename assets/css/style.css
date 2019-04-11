@@ -1,0 +1,48 @@
+body {
+    background-image:  url("../images/white-wood.jpg");
+}
+
+.box {
+    position: absolute;
+    height: 310px;
+    width: 400px;
+    margin: -100px 0 0 -200px;
+    top: 30%;
+    left: 50%;
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 15px 10px 10px 10px;
+}
+
+.results {
+    position: absolute;
+    height: 270px;
+    width: 400px;
+    margin: -100px 0 0 -200px;
+    top: 75%;
+    left: 50%;
+    color:#333333;
+    background-color: #cccccc;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+#tipinput {
+    width:  35%;
+    
+}
+
+#split {
+    margin-top: 18px;
+    width: 45%;
+}
+
+#calculate {
+   margin: 20px;
+   margin-left: 38%;
+}
+
+#share-results {
+
+}
