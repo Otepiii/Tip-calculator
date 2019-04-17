@@ -10,24 +10,47 @@ function calculate() {
 
     if (persons <= 0) {
         persons = 1;
-        document.getElementsByClassName(".person-result").style.display = "none";
+        document.getElementsByClassName("person-result").style.display = "none";
     } else {
-        document.getElementsByClassName(".person-result").style.display = "block";
+        // document.getElementsByClassName("person-result").style.display = "block";
     }
 
     let totalTipPer = (bill * tip)/ persons;
-    let totalPer = (bill + tip)/ persons;
+    let totalPer = (bill + (tip*100))/ persons;
+    let totalTip= bill * tip;
+    let total = bill + (tip*100);
 
     totalTipPer = totalTipPer.toFixed(2);
     totalPer = totalPer.toFixed(2);
+    total = total.toFixed(2);
+    totalTip = totalTip.toFixed(2);
 
     document.getElementById("total-tip/person").style.display="block";
     document.getElementById("total-tip/person").innerHTML = totalTipPer; 
     document.getElementById("total-price/person").style.display="block";
     document.getElementById("total-price/person").innerHTML = totalPer; 
+    document.getElementById("total-tip").style.display="block";
+    document.getElementById("total-tip").innerHTML = totalTip; 
+    document.getElementById("total-price").style.display="block";
+    document.getElementById("total-price").innerHTML = total; 
+}
 
+function showSplit() {
 
 }
+
+function showResults() {
+    
+}
+
+document.getElementById("total-tip/person").style.display="none";
+
+
+
+document.getElementById("calculate").onclick = function() {
+    calculate();
+}
+
 
 
 

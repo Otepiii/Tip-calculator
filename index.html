@@ -38,7 +38,7 @@
             <label class="btn btn-primary">
                 <input type="radio" name="options">
             </label>
-            <div class="input-group" style="display: block">
+            <div class="input-group" id="between" style="display: block">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Between</span>
                     <input type="text" class="form-control" id="persons">
@@ -50,19 +50,18 @@
     <div class="results" style="display: block">
         <div class="person-result" style="display: block">
             <div class="input-group mb-3">
-                <div>Tip Price
-                    <div id="total-price/person"></div>
+                <div>Tip Amount
+                    <div id="total-tip/person"></div>
                 </div>
                 <div></div>
             </div>
             <div class="input-group mb-3">
                 <div>
-                    Total Tip
-                    <div id="total-tip/person"></div>
+                    Total Price
+                    <div id="total-price/person"></div>
                 </div>
-                <div></div>
-                <div class="input-group mb-3">Per Person</div>
             </div>
+            <div id="divide" class="input-group mb-3">Per Person</div>
         </div>
         <hr>
 

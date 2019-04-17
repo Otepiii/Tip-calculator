@@ -4,7 +4,7 @@ body {
 
 .box {
     position: absolute;
-    height: 310px;
+    height: 290px;
     width: 400px;
     margin: -100px 0 0 -200px;
     top: 30%;
@@ -17,15 +17,16 @@ body {
 
 .results {
     position: absolute;
-    height: 270px;
+    height: 330px;
     width: 400px;
     margin: -100px 0 0 -200px;
-    top: 75%;
+    top: 69%;
     left: 50%;
-    color:#333333;
+    color:white;
     background-color: #cccccc;
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
+    text-align: center;
 }
 
 #tipinput {
@@ -43,6 +44,6 @@ body {
    margin-left: 38%;
 }
 
-#share-results {
-
+#divide {
+    margin-top: 5px;
 }
