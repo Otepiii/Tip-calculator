@@ -47,25 +47,21 @@
         </div>
         <button class="btn btn-primary" type="submit" id="calculate">Calculate</button>
     </div>
-    <div class="results" style="display: block">
-        <div class="person-result" style="display: block">
-            <div class="input-group mb-3">
-                <div>Tip Amount
-                    <div id="total-tip/person"></div>
-                </div>
-                <div></div>
-            </div>
-            <div class="input-group mb-3">
-                <div>
-                    Total Price
-                    <div id="total-price/person"></div>
-                </div>
-            </div>
-            <div id="divide" class="input-group mb-3">Per Person</div>
+    <div class="container" id="results" style="display: none">
+      
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">Tip Amount</div>
+            <div class="col-12 col-sm-6 col-md-8" id="total-tip/person"></div>
         </div>
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">Total Price</div>
+            <div class="col-12 col-sm-6 col-md-8" id="total-price/person"></div>
+        </div>
+        <h2 class="row">Per Person</h2>
+
         <hr>
 
-        <div class="input-group mb-3">
+        <!-- <div class="input-group mb-3">
             <div>Tip Amount
                 <div id="total-tip"></div>
             </div>
@@ -79,11 +75,17 @@
         </div>
         <div>
             <tr class="table-dark">Share Results</tr>
+        </div> -->
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">Tip Amount</div>
+            <div class="col-12 col-sm-6 col-md-8" id="total-tip"></div>
         </div>
-
-
-
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">Total Price</div>
+            <div class="col-12 col-sm-6 col-md-8" id="total-price"></div>
+        </div>
     </div>
+    <!-- <li class="list-group-item list-group-item-dark" id="share-results">Share:</li> -->
 
 
 
