@@ -19,7 +19,7 @@
         <div class="input-group mb-3">
             Bill
             <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
+                <span class="input-group-text" id="spam">$</span>
             </div>
             <input type="text" class="form-control" id="bill">
         </div>
@@ -29,18 +29,18 @@
                 Tip
                 <input type="text" class="form-control" id="tip">
                 <div class="input-group-append">
-                    <span class="input-group-text">%</span>
+                    <span class="input-group-text" id="spam2">%</span>
                 </div>
             </div>
         </div>
         <div id="split">
-            Split Bill
+            Split
             <label class="btn btn-primary">
-                <input type="radio" name="options">
+                <input type="radio" name="options" onclick="showBetween();">
             </label>
-            <div class="input-group" id="between" style="display: block">
+            <div class="input-group" id="between" style="display: none">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">Between</span>
+                    <span class="input-group-text" id="spam3">Between</span>
                     <input type="text" class="form-control" id="persons">
                 </div>
             </div>
@@ -48,34 +48,19 @@
         <button class="btn btn-primary" type="submit" id="calculate">Calculate</button>
     </div>
     <div class="container" id="results" style="display: none">
-      
-        <div class="row no-gutters">
-            <div class="col-6 col-md-4">Tip Amount</div>
-            <div class="col-12 col-sm-6 col-md-8" id="total-tip/person"></div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-6 col-md-4">Total Price</div>
-            <div class="col-12 col-sm-6 col-md-8" id="total-price/person"></div>
-        </div>
-        <h2 class="row">Per Person</h2>
-
-        <hr>
-
-        <!-- <div class="input-group mb-3">
-            <div>Tip Amount
-                <div id="total-tip"></div>
+        <div id="perPerson">
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">Tip Amount</div>
+                <div class="col-12 col-sm-6 col-md-8" id="total-tip/person"></div>
             </div>
-            <div></div>
-        </div>
-        <div class="input-group mb-3">
-            <div>Total Price
-                <div id="total-price"></div>
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">Total Price</div>
+                <div class="col-12 col-sm-6 col-md-8" id="total-price/person"></div>
             </div>
-            <div></div>
+            <h2 class="row">Per Person</h2>
+            <hr>
         </div>
-        <div>
-            <tr class="table-dark">Share Results</tr>
-        </div> -->
+
         <div class="row no-gutters">
             <div class="col-6 col-md-4">Tip Amount</div>
             <div class="col-12 col-sm-6 col-md-8" id="total-tip"></div>
