@@ -21,7 +21,7 @@ body {
 
 #results {
     position: absolute;
-    height: 250px;
+    height: auto;
     width: 400px;
     margin: -100px 0 0 -200px;
     top: 75%;
