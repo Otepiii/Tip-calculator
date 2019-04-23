@@ -1,14 +1,19 @@
+function is_numeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
 function calculate() {
     var bill = parseInt(document.getElementById("bill").value);
     var tip = parseInt(document.getElementById("tip").value) * .01;
-    var persons = parseInt(document.getElementById("persons").value);
+    var persons = parseInt(document.getElementById("persons").value || 0);
 
-    if (bill == "" || tip == "") {
-        alert("Please enter value");
+    if (!is_numeric(bill) || !is_numeric(tip)) {
+        alert("Please enter values for bill and tip");
+        location.reload();
         return;
     };
 
-    if (persons == "" || persons <= 1) {
+    if (persons == 0 || persons <= 1) {
         persons = 1;
 
         document.getElementById("perPerson").style.display = "none";
